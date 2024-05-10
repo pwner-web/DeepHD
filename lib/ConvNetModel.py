@@ -9,7 +9,7 @@ import logging
 
 __author__='Gao Shichen'
 __mail__= 'gaoshichend@163.com'
-__date__= '2023/05/26'
+__date__= '2024/05/10'
 
 # Configure logging and set the log level to INFO.
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -39,8 +39,6 @@ class NeuralNetwork(nn.Module):
             nn.MaxPool1d(2),
 
             nn.Flatten(start_dim=1),
-            #nn.Linear(10*1*6, 16),
-            # 此处需根据需要进行调整
             nn.Linear(self.LinearInputLength, 16),
             nn.LeakyReLU(),
             nn.BatchNorm1d(16),
