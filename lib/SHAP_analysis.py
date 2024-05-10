@@ -13,8 +13,8 @@ from IPython.display import display
 
 __author__="Gao Shichen"
 __mail__= "gaoshichend@163.com"
-__date__= "2023/05/26"
-__update__ = "2023/07/12"
+__date__= "2024/04/26"
+__update__ = "2024/05/10"
 
 def blockprint(func):
     def wrapper(*args, **kwargs):
