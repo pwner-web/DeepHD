@@ -11,7 +11,7 @@ import logging
 
 __author__='Gao Shichen'
 __mail__= 'gaoshichend@163.com'
-__date__= '2023/05/26'
+__date__= '2024/05/10'
 
 # Configure logging and set the log level to INFO.
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -21,9 +21,7 @@ class NeuralNetwork(nn.Module):
     def __init__(self, input_size):
         super(NeuralNetwork, self).__init__()
         self.linear_relu_stack = nn.Sequential(
-            # nn.Linear：全链接层
             nn.Linear(input_size, 512),
-            # LeakyReLU activate function 相比于ReLU，保留了一些负轴的值
             nn.LeakyReLU(),
             # Dropout function
             nn.Dropout(0.5),
