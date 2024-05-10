@@ -5,8 +5,8 @@ import os
 
 __author__="Gao Shichen"
 __mail__= "gaoshichend@163.com"
-__date__= "2023/05/26"
-__update__ = "2023/06/03"
+__date__= "2024/04/26"
+__update__ = "2024/05/10"
 
 class Image():
     def __init__(self, epochs):
