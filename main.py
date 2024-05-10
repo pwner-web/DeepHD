@@ -236,11 +236,6 @@ def main():
             model = DeepNetModel.NeuralNetwork(input_size=gene_number).to(device)
             print(model)
 
-        ## To visualize the network structure
-        #g = h.build_graph(NeuralNetwork(LinearInputLength=linearInputLength),torch.zeros([6, 1, gene_number]))
-        #g.theme = hl.graph.THEMES["blue"].copy()
-        #g.save("graph.png")
-
         loss_fn = nn.BCELoss()
         optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
         scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs)
@@ -309,7 +304,6 @@ def main():
         model.load_state_dict(torch.load(args.state_dict))
         model.train()
 
-        # 冻结前三层的参数
         for param in model.parameters():
             param.requires_grad = False
         for param in model.linear_relu_stack[:6].parameters():
