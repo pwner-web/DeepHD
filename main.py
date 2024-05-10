@@ -32,8 +32,8 @@ import warnings
 
 __author__="Gao Shichen"
 __mail__= "gaoshichend@163.com"
-__date__= "2023/05/26"
-__update__ = "2023/09/24"
+__date__= "2024/04/26"
+__update__ = "2024/05/10"
 
 __doc__ = """
 This program is used to predict gene expression from single-cell datasets and includes three machine learning algorithms: 1. Deep Neural Network, 2. Convolutional Neural Network, 3. Deep Residual Neural Network.
