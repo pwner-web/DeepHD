@@ -37,4 +37,4 @@ This repository contains a Python program designed to predict gene expression fr
 - **Author**: Gao Shichen
 - **Email**: gaoshichend@163.com
 - **Date**: 2024/04/23
-- **Last Update**: 2023/05/10
+- **Last Update**: 2023/05/11
