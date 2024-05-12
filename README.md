@@ -10,7 +10,7 @@ This repository contains a Python program designed to predict gene expression fr
 2. The dataset should be provided as a gene expression matrix of single-cell sequencing results, where cells represent rows and genes represent columns.
 3. The training data is divided into upper and lower quartiles, but this division can be adjusted based on the characteristics of the data.
 4. Preprocessing of the original expression matrix is required, including steps such as removing bimodal genes, normalizing and scaling RNA counts, and filtering out genes with fewer than 200 counts across cells or expressed in fewer than 3 cells.
-5. Default parameters are set as follows: batch_size is 64, learning rate is 0.00005, and epochs is 30. However, these parameters can be fine-tuned based on factors such as data size, number of genes, training results, and loss values. Parameter configurations are stored in the config.ini file.
+5. Default parameters are set as follows: batch_size is 64, learning rate is 0.001, and epochs is 30. However, these parameters can be fine-tuned based on factors such as data size, number of genes, training results, and loss values. Parameter configurations are stored in the config.ini file.
 
 ## Dependencies:
 
