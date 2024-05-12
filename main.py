@@ -42,9 +42,8 @@ Notes:
 
 1.This is a binary classification model that supports only two labels.
 2.The dataset should be a gene expression matrix of single-cell sequencing results, where cells are rows and genes are columns.
-3.The training data is divided into upper and lower quartiles, but it can be modified according to the data characteristics as needed.
-4.The original expression matrix should undergo preprocessing, including the following steps: removing bimodal genes, normalizing and scaling RNA counts, and removing genes with fewer than 200 counts across cells or expressed in fewer than 3 cells.
-5.Default parameters: batch_size is 64, learning rate is 0.00005, and epochs is 30. These parameters can be fine-tuned based on the actual data size, number of genes, training results, loss values, etc. The parameters are stored in the config.ini file.
+3.The original expression matrix should undergo preprocessing, including the following steps: removing bimodal genes, normalizing and scaling RNA counts, and removing genes with fewer than 200 counts across cells or expressed in fewer than 3 cells.
+4.Default parameters: batch_size is 64, learning rate is 0.001, and epochs is 30. These parameters can be fine-tuned based on the actual data size, number of genes, training results, loss values, etc. The parameters are stored in the config.ini file.
 """
 
 # Configure logging and set the log level to INFO.
