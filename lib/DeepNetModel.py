@@ -21,28 +21,19 @@ class NeuralNetwork(nn.Module):
     def __init__(self, input_size):
         super(NeuralNetwork, self).__init__()
         self.linear_relu_stack = nn.Sequential(
-            nn.Linear(input_size, 512),
+            nn.Linear(input_size, 128),
             nn.LeakyReLU(),
-            # Dropout function
-            nn.Dropout(0.5),
-            # normalization function
-            nn.BatchNorm1d(512),
-            
-            nn.Linear(512, 256),
-            nn.LeakyReLU(),
-            nn.Dropout(0.5),
-            nn.BatchNorm1d(256),
-            
-            nn.Linear(256, 128),
-            nn.LeakyReLU(),
-            nn.Dropout(0.3),
             nn.BatchNorm1d(128),
-            
             nn.Linear(128, 64),
             nn.LeakyReLU(),
             nn.BatchNorm1d(64),
-            nn.Linear(64, 1),
-            # sigmod activation function
+            nn.Linear(64, 16),
+            nn.LeakyReLU(),
+            nn.BatchNorm1d(16),
+            nn.Linear(16, 8),
+            nn.LeakyReLU(),
+            nn.BatchNorm1d(8),
+            nn.Linear(8, 1),
             nn.Sigmoid()
         )
 
